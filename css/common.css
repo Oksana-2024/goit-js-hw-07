@@ -36,6 +36,11 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
-.task-list {
-  padding: 50px 100px;
+:hover,
+:focus {
+  outline: none;
+}
+
+input {
+  outline: none;
 }
