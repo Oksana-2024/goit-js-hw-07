@@ -13,7 +13,10 @@ const destroyBoxes = () => {
 
 document.querySelector("[data-create]").addEventListener("click", () => {
   const number = document.querySelector("input").value;
-  console.log(number);
+  if (number > 100 || number < 1) {
+    return;
+  }
+
   let a = 0;
   destroyBoxes();
   while (a < number) {
