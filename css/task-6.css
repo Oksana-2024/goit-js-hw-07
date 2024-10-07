@@ -8,26 +8,24 @@ p {
 
 #controls {
   border-radius: 8px;
-  width: 486px;
-  height: 104px;
   background-color: #f6f6fe;
   margin-bottom: 16px;
   display: flex;
   flex-direction: row;
-  gap: 16px;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 #boxes {
-  width: 486px;
-  height: 134px;
   background-color: #f6f6fe;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 32px;
+  padding: 32px;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px 44px;
 }
 .input-field {
   border: 1px solid #808080;
@@ -76,3 +74,4 @@ button[data-destroy]:hover,
 button[data-destroy]:focus {
   background-color: #ff7070;
 }
+

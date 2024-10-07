@@ -18,15 +18,17 @@ document.querySelector("[data-create]").addEventListener("click", () => {
   }
 
   let a = 0;
+  const fragmentBox = document.createDocumentFragment();
   destroyBoxes();
   while (a < number) {
     const box = document.createElement("div");
     box.style.width = `${a * 10 + 30}px`;
     box.style.height = `${a * 10 + 30}px`;
     box.style.backgroundColor = getRandomHexColor();
-    document.querySelector("#boxes").append(box);
+    fragmentBox.appendChild(box);
     a++;
   }
+  boxes.appendChild(fragmentBox);
 });
 
 document
