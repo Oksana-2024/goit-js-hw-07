@@ -1,5 +1,4 @@
 .widget {
-  max-width: 345px;
   padding: 100px 88px;
   display: flex;
   flex-direction: column;
@@ -12,7 +11,6 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
-  width: 169px;
   text-align: center;
 }
 
